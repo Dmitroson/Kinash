@@ -39,7 +39,6 @@ namespace Kinash_2_2
             FormAnimation formAnimation = new FormAnimation();
             formAnimation.Owner = this;
             formAnimation.Show();
-            
         }
 
         protected void buttonMainDiagram_Click(object sender, EventArgs e)

@@ -154,7 +154,7 @@
         private System.Windows.Forms.Button buttonMainGraphicObject;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.HScrollBar hScrollBarSize;
-        private System.Windows.Forms.HScrollBar hScrollBarSpeed;
+        public System.Windows.Forms.HScrollBar hScrollBarSpeed;
     }
 }
 

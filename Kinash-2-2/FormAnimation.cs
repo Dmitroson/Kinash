@@ -24,7 +24,7 @@ namespace Kinash_2_2
         {
             Location = new Point(500, 25);
             timerAnimation.Enabled = true;
-            pictureBoxAnimation.ImageLocation = @"D:\jobs\smallball.png";
+            
         }
 
         private void timerAnimation_Tick(object sender, EventArgs e)

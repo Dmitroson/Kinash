@@ -22,11 +22,7 @@ namespace Kinash_2_2
         private void FormGraphicObject_Load(object sender, EventArgs e)
         {
             Location = new Point(500, 475);
-            radioButtonColor.Checked = false;
-            radioButtonSize.Checked = false;
-            radioButtonShape.Checked = false;
             Graphics graphic = pictureBoxGraphicObject.CreateGraphics();
-            
         }
 
         public void Draw(Graphics graphic)
@@ -53,7 +49,6 @@ namespace Kinash_2_2
                 graphic.DrawRectangle(RedPen, 50, 50, 100, 100);
                 graphic.FillRectangle(Brushes.Black, 50, 50, 100, 100);
             }
-            
         }
 
         private void radioButtonColor_CheckedChanged(object sender, EventArgs e)
