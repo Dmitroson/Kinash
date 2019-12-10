@@ -11,13 +11,23 @@ namespace Kinash_2_4
         static void Main(string[] args)
         {
             string s = Console.ReadLine();
-            string CheckArr;
-            for(var i = 0; i < s.Length; i++)
+            string CheckArr = "aeiouy";
+            var counter = 0;
+
+            string str = s.ToLower();
+
+            for(var i = 0; i < CheckArr.Length; i++)
             {
-                Console.Write(s[i]);
+                for(var j = 0; j < str.Length; j++)
+                {
+                    if (CheckArr[i] == str[j])
+                    {
+                        counter++;
+                    }
+                }
             }
 
-            Console.WriteLine(s);
+            Console.WriteLine(counter);
             Console.ReadKey();
         }
     }
