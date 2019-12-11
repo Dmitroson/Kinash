@@ -181,6 +181,7 @@
             this.textBoxStudentsNumber.Name = "textBoxStudentsNumber";
             this.textBoxStudentsNumber.Size = new System.Drawing.Size(266, 22);
             this.textBoxStudentsNumber.TabIndex = 14;
+            this.textBoxStudentsNumber.TextChanged += new System.EventHandler(this.textBoxStudentsNumber_TextChanged);
             // 
             // textBoxEmail
             // 
@@ -252,6 +253,7 @@
             this.button2.TabIndex = 22;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // RegistrationForm
             // 
@@ -303,18 +305,18 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBoxLastName;
-        private System.Windows.Forms.TextBox textBoxName;
-        private System.Windows.Forms.TextBox textBoxBirth;
-        private System.Windows.Forms.TextBox textBoxStudentsNumber;
-        private System.Windows.Forms.TextBox textBoxEmail;
-        private System.Windows.Forms.TextBox textBoxGroup;
-        private System.Windows.Forms.TextBox textBoxAdress;
         private System.Windows.Forms.TextBox textBoxConfirmation;
-        private System.Windows.Forms.ComboBox comboBoxSex;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        protected internal System.Windows.Forms.TextBox textBoxPassword;
-        protected internal System.Windows.Forms.TextBox textBoxUser;
+        public System.Windows.Forms.TextBox textBoxBirth;
+        public System.Windows.Forms.ComboBox comboBoxSex;
+        public System.Windows.Forms.TextBox textBoxName;
+        public System.Windows.Forms.TextBox textBoxLastName;
+        public System.Windows.Forms.TextBox textBoxStudentsNumber;
+        public System.Windows.Forms.TextBox textBoxGroup;
+        public System.Windows.Forms.TextBox textBoxEmail;
+        public System.Windows.Forms.TextBox textBoxAdress;
+        public System.Windows.Forms.TextBox textBoxPassword;
+        public System.Windows.Forms.TextBox textBoxUser;
     }
 }

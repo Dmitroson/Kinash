@@ -30,7 +30,18 @@ namespace Kinash_2_3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Owner.Activate();
+            this.Hide();
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void textBoxStudentsNumber_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

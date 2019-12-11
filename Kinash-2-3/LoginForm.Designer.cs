@@ -65,6 +65,7 @@
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(159, 134);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(180, 22);
             this.textBoxPassword.TabIndex = 3;
             // 
@@ -86,6 +87,7 @@
             this.buttonCancel.TabIndex = 5;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // LoginForm
             // 

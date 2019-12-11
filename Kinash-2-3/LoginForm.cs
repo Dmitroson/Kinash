@@ -12,7 +12,8 @@ namespace Kinash_2_3
 {
     public partial class LoginForm : Form
     {
-        
+        int n, m;
+        RegistrationForm registrationForm = new RegistrationForm();
         public LoginForm()
         {
             InitializeComponent();
@@ -20,27 +21,42 @@ namespace Kinash_2_3
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Користувач не зареєстрований!");
+            n = 0;
+            m = 0;
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void buttonOK_Click(object sender, EventArgs e)
         {
-            RegistrationForm registrationForm = new RegistrationForm();
-            registrationForm.Owner = this;
-            registrationForm.Show();
+            if (n == 0)
+            {
+                MessageBox.Show("Користувач не зареєстрований!");
+                n++;
+                
+                registrationForm.Owner = this;
+                registrationForm.Show();
+            }
 
             if ((textBoxUser.Text == registrationForm.textBoxUser.Text && textBoxPassword.Text == registrationForm.textBoxPassword.Text) &&
                 (textBoxUser.Text != "" && textBoxPassword.Text != "")) 
             {
-                DialogForm dialogForm = new DialogForm();
+                DialogForm dialogForm = new DialogForm(registrationForm);
                 dialogForm.Owner = this;
                 dialogForm.Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Введіть вірний логін та пароль!");
-
+                if (m != 0)
+                {
+                    MessageBox.Show("Введіть вірний логін та пароль!");
+                    
+                }
+                m++;
             }
         }
     }
